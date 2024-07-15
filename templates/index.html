@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\app.css">
+    <title>Spam Ham detector</title>
+</head>
+
+<body>
+    <h1 class="title">spam ham detector</h1>
+    <div class="forms">
+        <form action="/submit" method="POST" class="form">
+            <div>
+                <label for="message">Enter message</label>
+                <input type="text" id="message" name="message">
+            </div>
+            <button type="submit">predict</button>
+        </form>
+    </div>
+    {% if prediction %}
+    <p>this message is a <b>{{prediction}}</b></p>
+    {%endif%}
+</body>
+
+</html>

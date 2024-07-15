@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(222, 229, 235);
+
+}
+
+h1 {
+    text-align: center;
+    padding: 3px 5px;
+}
+
+button {
+    padding: 3px 5px;
+    background-color: rgb(138, 166, 166);
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+}
